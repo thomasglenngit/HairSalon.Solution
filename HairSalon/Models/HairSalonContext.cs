@@ -6,7 +6,7 @@ namespace HairSalon.Models
   {
     public virtual DbSet<Stylist> Stylists { get; set; }
 
-    // public virtual DbSet<Review> Reviews { get; set; }
+    public virtual DbSet<Evaluation> Evaluations { get; set; }
 
     public DbSet<Client> Clients { get; set; }
 
