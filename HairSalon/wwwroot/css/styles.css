@@ -1,0 +1,17 @@
+.jumbotron {
+  background-color: red;
+  color: blue;
+  border: solid 1px #343a40;
+  border-radius: 10px;
+  text-align: center;
+}
+  
+body {
+  background-image: url(http://images.adsttc.com/media/images/549a/48f9/e58e/ce87/4600/0184/large_jpg/04_SLUNDRE.jpg?1419397361)
+}
+
+.main {
+  background-color: rgb(216, 231, 237);
+  border-radius: 10px;
+  opacity: 5;
+}
