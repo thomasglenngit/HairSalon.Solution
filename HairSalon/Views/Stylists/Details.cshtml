@@ -21,21 +21,6 @@
 }
 </ul>
 
-<!-- show Evaluations like in index.cdhtml -->
- <h4>Evaluations:</h4>
-@if (@Model.Evaluations.Count == 0)
-{
-  <h3>No evaluations have been added yet!</h3>
-} 
-
-<ul>
-@foreach (Evaluation evaluation in Model.Evaluations)
-{
-  <li><h4>@evaluation.Rank</h4><p>@evaluation.Text</p></li>
-} 
-</ul>
-<!-- <p>Add Evaluation</p>-->
-<p>@Html.ActionLink("Add Evaluation", "Create", "Evaluations")</p> 
 
 <p>@Html.ActionLink("Add a Client", "Create", "Clients")</p>
 <p>@Html.ActionLink("Back to stylists", "Index")</p>

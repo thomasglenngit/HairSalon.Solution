@@ -11,6 +11,5 @@ namespace HairSalon.Models
     public string Mobile { get; set; }
     public virtual Stylist Stylist { get; set; }
     
-    public virtual ICollection<Evaluation> Evaluations { get; set; }
   }
 }
