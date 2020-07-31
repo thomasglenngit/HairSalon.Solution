@@ -1,5 +1,5 @@
 .jumbotron {
-  background-color: red;
+  background-color: white;
   color: blue;
   border: solid 1px #343a40;
   border-radius: 10px;
@@ -11,7 +11,8 @@ body {
 }
 
 .main {
-  background-color: rgb(216, 231, 237);
+  color: black;
+  background-color: whitesmoke;
   border-radius: 10px;
-  opacity: 5;
+  
 }
