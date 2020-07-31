@@ -42,7 +42,7 @@ namespace HairSalon.Controllers
     }
     public ActionResult Details(int id)
     {
-        Stylist thisStylist = _db.Stylists.Include(stylist => stylist.Clients).FirstOrDefault(stylists => stylists.StylistId == id);
+        Stylist thisStylist = _db.Stylists.Include(stylist => stylist.Clients).Include(stylist => stylist.Evaluation).FirstOrDefault(stylists => stylists.StylistId == id);
         return View(thisStylist); // Eager loading in a Lazy Loading context.
     }
 
