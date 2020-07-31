@@ -29,9 +29,9 @@ namespace HairSalon.Controllers
     [HttpPost]
     public ActionResult Create(Stylist stylist)
     {
-        foreach(Stylist cus in _db.Stylists)
+        foreach(Stylist style in _db.Stylists)
         {
-          if(cus.Type == Stylist.Type)
+          if(style.Name == Stylist.Name)
           {
             return RedirectToAction("Index");
           }
