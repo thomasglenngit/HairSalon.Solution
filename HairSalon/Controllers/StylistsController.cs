@@ -31,7 +31,7 @@ namespace HairSalon.Controllers
     {
         foreach(Stylist style in _db.Stylists)
         {
-          if(style.Name == Stylist.Name)
+          if(style.Name == stylist.Name)
           {
             return RedirectToAction("Index");
           }

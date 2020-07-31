@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace HairSalon.Controllers
 {
-  public class ClientsController : Controllers
+  public class ClientsController : Controller
   {
     private readonly HairSalonContext _db;
 
@@ -25,7 +25,7 @@ namespace HairSalon.Controllers
     [HttpGet]
     public ActionResult Create()
     {
-      viewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
+      ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
       return View();
     }
 
@@ -39,13 +39,13 @@ namespace HairSalon.Controllers
 
     public ActionResult Details(int id)
     {
-      Client thisClient = _db.Clients.Include(clients => client.Reviews).FirstOrDefault(clients => clients.ClientId = id);
+      Client thisClient = _db.Clients.Include(clients => clients.Name).FirstOrDefault(clients => clients.ClientId == id);
       return View(thisClient);
     }
 
     public ActionResult Edit(int id)
     {
-      var thisClient = _db.Clients.FirstOrDefault(clients => clients.ClientsId == id);
+      var thisClient = _db.Clients.FirstOrDefault(clients => clients.ClientId == id);
       ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
       return View(thisClient);
     }
