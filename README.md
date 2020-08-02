@@ -7,7 +7,7 @@
 <img src="HairSalon/wwwroot/assets/images/eauclaire.png"          style="float: left; margin-right: 10px;" />
 
 ## Description
-A code review program for Epicodus school, which tracks the stylists and clients for "Claire", the owner of "Eau Claire's Salon". 
+A code review program for Epicodus school, which tracks the stylists and clients for "Claire", the owner of "Eau Claire Salon". 
 
 
 ## Specifications
