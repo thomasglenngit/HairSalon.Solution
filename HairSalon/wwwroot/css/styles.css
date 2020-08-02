@@ -1,18 +1,28 @@
-.jumbotron {
+/* .jumbotron {
   background-color: white;
   color: blue;
   border: solid 1px #343a40;
   border-radius: 10px;
   text-align: center;
-}
+} */
 
 h1 {
   font-size: 150px;
   color: white;
 }
 
+h2 {
+  font-size: 80px;
+}
+
 h3 {
   font-size: 50px;
+  color: white;
+}
+
+h4 {
+  font-size: 40px;
+  color: white;
 }
   
 body {
@@ -20,15 +30,33 @@ body {
   font-size: 30px;
 }
 
+.ActionLink {
+  color: white;
+}
+
 #nav {
   color: white;
   font-size: 40px;
+}
+input {
+  color: black;
+  font-size: 20px;
+}
+
+.sidebar {
+  float: left;
+  margin: 10px;
+  border: 2px white;
+  padding: 10px;
 }
 
 .main {
   color: white;
 font-family: Arial, Helvetica, sans-serif;
-  
 }
 
-/* http://images.adsttc.com/media/images/549a/48f9/e58e/ce87/4600/0184/large_jpg/04_SLUNDRE.jpg?1419397361 */
+.danger {
+  font-size: 30px;
+  color: red;
+  font-synthesis: weight;
+}
