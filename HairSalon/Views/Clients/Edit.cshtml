@@ -3,23 +3,24 @@
 }
 
 @model HairSalon.Models.Client;
+<div class="sidebar">
+  <h2>Edit</h2>
 
-<h2>Edit</h2>
+  <h4>Edit this client's information: @Html.DisplayFor(model => model.Name): @Html.DisplayFor(model => model.Mobile)</h4>
 
-<h4>Edit this client's information: @Html.DisplayFor(model => model.Name): @Html.DisplayFor(model => model.Mobile)</h4>
+  @using (Html.BeginForm())
+  {
+      @Html.HiddenFor(model => model.ClientId)
 
-@using (Html.BeginForm())
-{
-    @Html.HiddenFor(model => model.ClientId)
+      @Html.LabelFor(model => model.Name)
+      @Html.EditorFor(model => model.Name)
+      @Html.LabelFor(model => model.Mobile)
+      @Html.EditorFor(model => model.Mobile)
 
-    @Html.LabelFor(model => model.Name)
-    @Html.EditorFor(model => model.Name)
-    @Html.LabelFor(model => model.Mobile)
-    @Html.EditorFor(model => model.Mobile)
-
-    @Html.LabelFor(model => model.Stylist)
-    @Html.DropDownList("StylistId")
-    
-    <input type="submit" value="Save" />
-}
+      @Html.LabelFor(model => model.Stylist)
+      @Html.DropDownList("StylistId")
+      
+      <input type="submit" value="Save" />
+  }
 <p>@Html.ActionLink("Back to list", "Index")</p>
+</div>
