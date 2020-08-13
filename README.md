@@ -98,9 +98,10 @@ CREATE TABLE `stylists` (
 
 ## Technologies Used
 * Visual Studio Code (code editor)
-* C#/.NET
+* C#/ASP.NET MVC
 * GitHub
 * MSTests
+* MySQL Workbench
 * MacOS Catalina
 
 ## License
