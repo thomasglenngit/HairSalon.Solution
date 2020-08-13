@@ -12,11 +12,11 @@ A code review program for Epicodus school, which tracks the stylists and clients
 
 ## Specifications
 | Spec | Input | Output | 
-|:--------- |:--------- |:-------- |:---------|
+|:--------- |:--------- |:-------- |
 | The program will construct a stylists catalogue allowing Claire to make entries | "Name", "ID" | "Marjory Smith" "1"| 
 | The program will construct a clients catalogue allowing Claire to make entries | "Name"  "Mobile Number" | "Jessica" "123-456-7890" |
-| The program will allow Claire to view lists of Stylists with Clients | "Marjory" -- "Jessica" |
-| The program will allow Claire to edit entries | "Marjory Smith" | "Marjory Smythe"
+| The program will allow Claire to view lists of Stylists with Clients | "Marjory" -- "Jessica" | |
+| The program will allow Claire to edit entries | "Marjory Smith" | "Marjory Smythe" |
 | The program will allow the Clair to delete entries | "Marjory Smythe" | " " | 
 
 ## Known Bugs
